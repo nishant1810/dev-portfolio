@@ -9,10 +9,8 @@ import askIQ from "../../assets/askIQ.png";
 import quickBite from "../../assets/quickBite.png";
 import salonServices from "../../assets/salonservices.png";
 import shrinkyfy from "../../assets/shrinkyfy.png";
-import schemeHub from "../../assets/schemeHub.jpg";
 import expenseManagementSystem from "../../assets/expenseManagementSystem.png";
 import pasteAppImg from "../../assets/pasteAppImg.png";
-import dailyNews from "../../assets/dailyNews.png";
 import balloonBurst from "../../assets/balloonBurst.png";
 import connect4Img from "../../assets/connect4Img.png";
 import cardMatchImg from "../../assets/cardMatchImg.png";
@@ -138,22 +136,7 @@ const projects = [
     repo: "https://github.com/nishant1810/Shrinkify",
     live: "",
   },
-  {
-    title: "SchemeHub",
-    description:
-      "A centralized government scheme discovery platform that helps users find and apply for relevant schemes based on their eligibility.",
-    techStack: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "REST APIs",
-    ],
-    image: schemeHub,
-    repo: "https://github.com/nishant1810/new-sih",
-    live: "",
-  },
+
   {
     title: "Chess Game",
     description:
@@ -180,15 +163,7 @@ const projects = [
     repo: "https://github.com/nishant1810/Human-following-robot.git",
     live: "https://google.com",
   },
-  {
-    title: "DailyNews",
-    description:
-      "A real-time news aggregator application that fetches and displays the latest headlines from various categories using news APIs.",
-    techStack: ["React.js", "News API", "Tailwind CSS", "Axios", "React Router"],
-    image: dailyNews,
-    repo: "https://github.com/nishant1810/Daily-News",
-    live: "",
-  },
+ 
   {
     title: "PasteMaster",
     description:
@@ -318,3 +293,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
