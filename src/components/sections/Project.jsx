@@ -1,181 +1,238 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-// Import your images here (adjust paths as needed)
+// Consistent camelCase imports
 import digitImg from "../../assets/project-digit.png";
 import robotImg from "../../assets/robo.jpg";
-import AskIQ from "../../assets/AskIQ.png";
-import QuickBite from "../../assets/QuickBite.png";
-import salonservices from "../../assets/salonservices.png";
-import Shrinkyfy from "../../assets/Shrinkyfy.png";
-import SchemeHub from "../../assets/SchemeHub.jpg";
+import askIQ from "../../assets/askIQ.png";
+import quickBite from "../../assets/quickBite.png";
+import salonServices from "../../assets/salonservices.png";
+import shrinkyfy from "../../assets/shrinkyfy.png";
+import schemeHub from "../../assets/schemeHub.jpg";
 import expenseManagementSystem from "../../assets/expenseManagementSystem.png";
 import pasteAppImg from "../../assets/pasteAppImg.png";
-import DailyNews from "../../assets/DailyNews.png";
+import dailyNews from "../../assets/dailyNews.png";
 import balloonBurst from "../../assets/balloonBurst.png";
 import connect4Img from "../../assets/connect4Img.png";
 import cardMatchImg from "../../assets/cardMatchImg.png";
 import chessGameImg from "../../assets/chessGameImg.png";
 import strengthLabzImg from "../../assets/strengthLabzImg.png";
-import RescueMeal from "../../assets/RescueMeal.png"; 
+import rescueMeal from "../../assets/rescueMeal.png";
 
 const projects = [
   {
-    title: 'StrengthLabz',
+    title: "StrengthLabz",
     description:
-      'A full-stack eCommerce platform built with the MERN stack featuring secure authentication, real-time cart updates with Socket.IO, payment gateway integration via Razorpay, and an admin dashboard for managing products and orders.',
-    techStack: ['React.js','Tailwind CSS','Node.js','Express.js','MongoDB','Cloudinary','Razorpay','JWT','Socket.IO'],
+      "A full-stack eCommerce platform built with the MERN stack featuring secure authentication, real-time cart updates with Socket.IO, payment gateway integration via Razorpay, and an admin dashboard for managing products and orders.",
+    techStack: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Cloudinary",
+      "Razorpay",
+      "JWT",
+      "Socket.IO",
+    ],
     image: strengthLabzImg,
-    repo: 'https://github.com/aryankardam/StrengthLabz',
-    live: 'https://strength-labz-git-main-aryan-kardams-projects.vercel.app/',
+    repo: "https://github.com/aryankardam/StrengthLabz",
+    live: "https://strength-labz-git-main-aryan-kardams-projects.vercel.app/",
   },
   {
-    title: 'RescueMeal',
+    title: "RescueMeal",
     description:
-      'A full-stack eCommerce platform built with the MERN stack featuring secure authentication, real-time cart updates with Socket.IO, payment gateway integration via Razorpay, and an admin dashboard for managing products and orders.',
-    techStack: ['React.js','Tailwind CSS','Node.js','Express.js','MongoDB','Razorpay','JWT','Socket.IO'],
-    image: RescueMeal,
-    repo: 'https://github.com/nishant1810/RescueMeal.git',
-    live: 'https://rescuemeals.onrender.com/',
+      "A full-stack eCommerce platform built with the MERN stack featuring secure authentication, real-time cart updates with Socket.IO, payment gateway integration via Razorpay, and an admin dashboard for managing products and orders.",
+    techStack: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Razorpay",
+      "JWT",
+      "Socket.IO",
+    ],
+    image: rescueMeal,
+    repo: "https://github.com/nishant1810/RescueMeal.git",
+    live: "https://rescuemeals.onrender.com/",
   },
 
   {
-    title: 'Salon Booking System',
+    title: "Salon Booking System",
     description:
-      'An intuitive salon management system that allows users to book appointments, manage services, track staff schedules, and provide customer feedback.',
-    techStack: ['Java', 'Spring Boot', 'MySQL', 'JWT'],
-    image: salonservices,
-    repo: 'https://github.com/nishant1810/saloonServices.git',
-    live: '',
+      "An intuitive salon management system that allows users to book appointments, manage services, track staff schedules, and provide customer feedback.",
+    techStack: ["Java", "Spring Boot", "MySQL", "JWT"],
+    image: salonServices,
+    repo: "https://github.com/nishant1810/saloonServices.git",
+    live: "",
   },
 
   {
-    title: 'Expense Management System',
+    title: "Expense Management System",
     description:
-      'A smart personal finance tracker that helps users manage their expenses effectively. Provides real-time spending insights, customizable budgeting tools, and category-based tracking.',
-    techStack: ['React.js','Node.js','Express.js','MongoDB','Bootstrap','tsparticles'],
+      "A smart personal finance tracker that helps users manage their expenses effectively. Provides real-time spending insights, customizable budgeting tools, and category-based tracking.",
+    techStack: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Bootstrap",
+      "tsparticles",
+    ],
     image: expenseManagementSystem,
-    repo: 'https://github.com/nishant1810/Expense-Management-System.git',
-    live: 'https://expense-tracker-app-three-beryl.vercel.app/login', 
+    repo: "https://github.com/nishant1810/Expense-Management-System.git",
+    live: "https://expense-tracker-app-three-beryl.vercel.app/login",
   },
   {
-    title: 'Django Web App',
+    title: "Django Web App",
     description:
-      'A web application built with Django that demonstrates full-stack capabilities including user authentication, CRUD operations, and dynamic content management.',
-    techStack: ['Django','Python','SQLite','HTML','CSS','Bootstrap'],
-    image: salonservices,
-    repo: 'https://github.com/nishant1810/Django-Web-App',
-    live: '', 
+      "A web application built with Django that demonstrates full-stack capabilities including user authentication, CRUD operations, and dynamic content management.",
+    techStack: ["Django", "Python", "SQLite", "HTML", "CSS", "Bootstrap"],
+    image: salonServices,
+    repo: "https://github.com/nishant1810/Django-Web-App",
+    live: "",
   },
-  
+
   {
-    title: 'AskIQ',
+    title: "AskIQ",
     description:
-      'AskIQ is a smart AI-powered chat app built with React and Vite, offering fast and responsive user interaction. It features markdown support, chat history, dark/light mode, and a clean, mobile-friendly UI.',
-    techStack: ['React.js','Vite','Tailwind CSS','OpenAI API','MongoDB','Express.js','Node.js'],
-    image: AskIQ,
-    repo: 'https://github.com/nishant1810/AskIQ',
-    live: 'https://ask-iq-nishant18s-projects-b9a8ab29.vercel.app/', 
-  },
-  {
-    title: 'Quick Bite',
-    description:
-      'A web platform designed for seamless food ordering, connecting users with nearby restaurants and delivery services.',
-    techStack: ['React.js','Node.js','Express.js','MongoDB','Tailwind CSS'],
-    image: QuickBite,
-    repo: 'https://github.com/nishant1810/QuickBite',
-    live: '', 
-  },
-  {
-    title: 'Shrinkyfy',
-    description:
-      'A Shrinkyfy web app with user authentication, link analytics, and custom short URLs. Built using React.js with Vite for a fast, responsive UI.',
-    techStack: ['React.js','Vite','Node.js','Express.js','MongoDB','JWT','Tailwind CSS'],
-    image: Shrinkyfy, 
-    repo: 'https://github.com/nishant1810/Shrinkify',
-    live: '', 
+      "AskIQ is a smart AI-powered chat app built with React and Vite, offering fast and responsive user interaction. It features markdown support, chat history, dark/light mode, and a clean, mobile-friendly UI.",
+    techStack: [
+      "React.js",
+      "Vite",
+      "Tailwind CSS",
+      "OpenAI API",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+    ],
+    image: askIQ,
+    repo: "https://github.com/nishant1810/AskIQ",
+    live: "https://ask-iq-nishant18s-projects-b9a8ab29.vercel.app/",
   },
   {
-    title: 'SchemeHub',
+    title: "Quick Bite",
     description:
-      'A centralized government scheme discovery platform that helps users find and apply for relevant schemes based on their eligibility.',
-    techStack: ['React.js','Node.js','Express.js','MongoDB','Tailwind CSS','REST APIs'],
-    image: SchemeHub,
-    repo: 'https://github.com/nishant1810/new-sih',
-    live: '', 
+      "A web platform designed for seamless food ordering, connecting users with nearby restaurants and delivery services.",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    image: quickBite,
+    repo: "https://github.com/nishant1810/QuickBite",
+    live: "",
   },
   {
-    title: 'Chess Game',
+    title: "Shrinkyfy",
     description:
-      'A real-time multiplayer chess game built with Socket.IO for seamless game state synchronization.',
-    techStack: ['Node.js', 'Socket.IO', 'Express.js', 'Chess.js', 'HTML', 'CSS'],
-    image: chessGameImg,  
-    repo: 'https://github.com/nishant1810/Chess-Game.git',
-    live: '', 
+      "A Shrinkyfy web app with user authentication, link analytics, and custom short URLs. Built using React.js with Vite for a fast, responsive UI.",
+    techStack: [
+      "React.js",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Tailwind CSS",
+    ],
+    image: shrinkyfy,
+    repo: "https://github.com/nishant1810/Shrinkify",
+    live: "",
   },
   {
-    title: 'Human-Following-Robot',
+    title: "SchemeHub",
     description:
-      'An Arduino-based robot that uses ultrasonic and IR sensors to track and follow a human intelligently.',
-    techStack: ['Arduino Uno', 'Ultrasonic Sensor (HC-SR04)', 'IR Sensors', 'L293D Motor Driver', 'DC Motors', 'Servo Motor', 'Buzzer'],
+      "A centralized government scheme discovery platform that helps users find and apply for relevant schemes based on their eligibility.",
+    techStack: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "REST APIs",
+    ],
+    image: schemeHub,
+    repo: "https://github.com/nishant1810/new-sih",
+    live: "",
+  },
+  {
+    title: "Chess Game",
+    description:
+      "A real-time multiplayer chess game built with Socket.IO for seamless game state synchronization.",
+    techStack: ["Node.js", "Socket.IO", "Express.js", "Chess.js", "HTML", "CSS"],
+    image: chessGameImg,
+    repo: "https://github.com/nishant1810/Chess-Game.git",
+    live: "",
+  },
+  {
+    title: "Human-Following-Robot",
+    description:
+      "An Arduino-based robot that uses ultrasonic and IR sensors to track and follow a human intelligently.",
+    techStack: [
+      "Arduino Uno",
+      "Ultrasonic Sensor (HC-SR04)",
+      "IR Sensors",
+      "L293D Motor Driver",
+      "DC Motors",
+      "Servo Motor",
+      "Buzzer",
+    ],
     image: robotImg,
-    repo: 'https://github.com/nishant1810/Human-following-robot.git',
-    live: 'https://google.com',
+    repo: "https://github.com/nishant1810/Human-following-robot.git",
+    live: "https://google.com",
   },
   {
-    title: 'DailyNews',
+    title: "DailyNews",
     description:
-      'A real-time news aggregator application that fetches and displays the latest headlines from various categories using news APIs.',
-    techStack: ['React.js','News API','Tailwind CSS','Axios','React Router'],
-    image: DailyNews,
-    repo: 'https://github.com/nishant1810/Daily-News',
-    live: '', 
+      "A real-time news aggregator application that fetches and displays the latest headlines from various categories using news APIs.",
+    techStack: ["React.js", "News API", "Tailwind CSS", "Axios", "React Router"],
+    image: dailyNews,
+    repo: "https://github.com/nishant1810/Daily-News",
+    live: "",
   },
   {
-    title: 'PasteMaster',
+    title: "PasteMaster",
     description:
-      'A lightweight web-based application for creating and sharing text snippets.',
-    techStack: ['React.js', 'Redux', 'Tailwind CSS', 'React Router'],
+      "A lightweight web-based application for creating and sharing text snippets.",
+    techStack: ["React.js", "Redux", "Tailwind CSS", "React Router"],
     image: pasteAppImg,
-    repo: 'https://github.com/nishant1810/PasteMaster.git',
-    live: 'https://note-paste-app--one.vercel.app/',
-  }, 
+    repo: "https://github.com/nishant1810/PasteMaster.git",
+    live: "https://note-paste-app--one.vercel.app/",
+  },
   {
-    title: 'FourInARow',
+    title: "FourInARow",
     description:
-      'A classic two-player Connect 4 game built using vanilla JavaScript, HTML, and CSS.',
-    techStack: ['JavaScript', 'HTML', 'CSS'],
+      "A classic two-player Connect 4 game built using vanilla JavaScript, HTML, and CSS.",
+    techStack: ["JavaScript", "HTML", "CSS"],
     image: connect4Img,
-    repo: 'https://github.com/nishant1810/FourInARow.git',
-    live: 'https://connect4game.vercel.app',
+    repo: "https://github.com/nishant1810/FourInARow.git",
+    live: "https://connect4game.vercel.app",
   },
   {
-    title: 'DigitRecognizer',
+    title: "DigitRecognizer",
     description:
-      'A neural network model trained using TensorFlow and Keras to recognize digits from the MNIST dataset.',
-    techStack: ['Python', 'Keras', 'TensorFlow', 'OpenCV'],
+      "A neural network model trained using TensorFlow and Keras to recognize digits from the MNIST dataset.",
+    techStack: ["Python", "Keras", "TensorFlow", "OpenCV"],
     image: digitImg,
-    repo: 'https://github.com/nishant1810/DigitRecognizer.git',
-    live: '',
+    repo: "https://github.com/nishant1810/DigitRecognizer.git",
+    live: "",
   },
   {
-    title: 'FlipPair',
+    title: "FlipPair",
     description:
-      'A memory-based card matching game built using vanilla JavaScript. Players flip cards to find matching pairs.',
-    techStack: ['JavaScript', 'HTML', 'CSS'],
+      "A memory-based card matching game built using vanilla JavaScript. Players flip cards to find matching pairs.",
+    techStack: ["JavaScript", "HTML", "CSS"],
     image: cardMatchImg,
-    repo: 'https://github.com/nishant1810/FlipPair.git',
-    live: 'https://card-matching-game.vercel.app',
+    repo: "https://github.com/nishant1810/FlipPair.git",
+    live: "https://card-matching-game.vercel.app",
   },
   {
-    title: 'Balloon Burst',
+    title: "Balloon Burst",
     description:
-      'An interactive Phaser.js game where players burst balloons to score points with smooth animations and increasing difficulty levels.',
-    techStack: ['Phaser.js','JavaScript','HTML5','CSS3'],
-    image: balloonBurst, 
-    repo: 'https://github.com/nishant1810/BalloonBurst',
-    live: '', 
+      "An interactive Phaser.js game where players burst balloons to score points with smooth animations and increasing difficulty levels.",
+    techStack: ["Phaser.js", "JavaScript", "HTML5", "CSS3"],
+    image: balloonBurst,
+    repo: "https://github.com/nishant1810/BalloonBurst",
+    live: "",
   },
 ];
 
@@ -196,22 +253,26 @@ const Projects = () => {
         </h2>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
-              key={index}
+              key={project.title}
               className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:shadow-md transition duration-300 flex flex-col justify-between"
               whileHover={{ scale: 1.02 }}
             >
               <img
                 src={project.image}
-                alt={project.title || "Project image"}
+                alt={`Screenshot of ${project.title}`}
                 loading="lazy"
                 className="h-48 w-full object-cover"
               />
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-blue-400">{project.title}</h3>
-                  <p className="text-sm text-gray-300 mt-2">{project.description}</p>
+                  <h3 className="text-xl font-semibold text-blue-400">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-gray-300 mt-2">
+                    {project.description}
+                  </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.techStack.map((tech, i) => (
                       <span
@@ -235,7 +296,7 @@ const Projects = () => {
                       <FaGithub />
                     </a>
                   )}
-                  {project.live && (
+                  {project.live && project.live.trim() !== "" && (
                     <a
                       href={project.live}
                       target="_blank"
@@ -257,4 +318,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
