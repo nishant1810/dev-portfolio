@@ -9,10 +9,10 @@ import AskIQ from "../../assets/AskIQ.png";
 import QuickBite from "../../assets/QuickBite.png";
 import salonservices from "../../assets/salonservices.png";
 import Shrinkyfy from "../../assets/Shrinkyfy.png";
-import schemeHub from "../../assets/schemeHub.jpg";
+import SchemeHub from "../../assets/SchemeHub.jpg";
 import expenseManagementSystem from "../../assets/expenseManagementSystem.png";
 import pasteAppImg from "../../assets/pasteAppImg.png";
-import dailyNews from "../../assets/dailyNews.png";
+import DailyNews from "../../assets/DailyNews.png";
 import balloonBurst from "../../assets/balloonBurst.png";
 import connect4Img from "../../assets/connect4Img.png";
 import cardMatchImg from "../../assets/cardMatchImg.png";
@@ -101,7 +101,7 @@ const projects = [
     description:
       'A centralized government scheme discovery platform that helps users find and apply for relevant schemes based on their eligibility.',
     techStack: ['React.js','Node.js','Express.js','MongoDB','Tailwind CSS','REST APIs'],
-    image: schemeHub,
+    image: SchemeHub,
     repo: 'https://github.com/nishant1810/new-sih',
     live: '', 
   },
@@ -128,7 +128,7 @@ const projects = [
     description:
       'A real-time news aggregator application that fetches and displays the latest headlines from various categories using news APIs.',
     techStack: ['React.js','News API','Tailwind CSS','Axios','React Router'],
-    image: dailyNews,
+    image: DailyNews,
     repo: 'https://github.com/nishant1810/Daily-News',
     live: '', 
   },
@@ -257,3 +257,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
