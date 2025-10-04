@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #0a0a0a;
+  color: #f3f4f6;
+}
+
+/* -------------------- Custom Animations -------------------- */
+
+/* Typing cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+
+/* Loading bar animation */
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+.animate-loading-bar {
+  animation: loading 1.2s ease-in-out infinite;
+}
+
+/* -------------------- Responsive Fix -------------------- */
+@media (max-width: 767px) {
+  #myAvatar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+}
+
+/* -------------------- Social Icons Hover Effect -------------------- */
+.home-social-icons {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #68187a;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #801f95;
+}
