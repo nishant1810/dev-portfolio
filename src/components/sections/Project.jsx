@@ -16,7 +16,7 @@ import connect4Img from "../../assets/connect4Img.png";
 import cardMatchImg from "../../assets/cardMatchImg.png";
 import chessGameImg from "../../assets/chessGameImg.png";
 import strengthLabzImg from "../../assets/strengthLabzImg.png";
-import rescueMeal from "../../assets/rescueMeal.png";
+import rescueMeal from "../../assets/RescueMeal.png";
 
 const projects = [
   {
@@ -293,6 +293,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
 
