@@ -8,7 +8,7 @@ import robotImg from "../../assets/robo.jpg";
 import askIQ from "../../assets/AskIQ.png";
 import quickBite from "../../assets/QuickBite.png";
 import salonServices from "../../assets/salonservices.png";
-import shrinkyfy from "../../assets/shrinkyfy.png";
+import shrinkyfy from "../../assets/Shrinkyfy.png";
 import expenseManagementSystem from "../../assets/expenseManagementSystem.png";
 import pasteAppImg from "../../assets/pasteAppImg.png";
 import balloonBurst from "../../assets/BalloonBurst.png";
@@ -293,5 +293,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
