@@ -5,13 +5,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 // Consistent camelCase imports
 import digitImg from "../../assets/project-digit.png";
 import robotImg from "../../assets/robo.jpg";
-import askIQ from "../../assets/askIQ.png";
-import quickBite from "../../assets/quickBite.png";
+import askIQ from "../../assets/AskIQ.png";
+import quickBite from "../../assets/QuickBite.png";
 import salonServices from "../../assets/salonservices.png";
 import shrinkyfy from "../../assets/shrinkyfy.png";
 import expenseManagementSystem from "../../assets/expenseManagementSystem.png";
 import pasteAppImg from "../../assets/pasteAppImg.png";
-import balloonBurst from "../../assets/balloonBurst.png";
+import balloonBurst from "../../assets/BalloonBurst.png";
 import connect4Img from "../../assets/connect4Img.png";
 import cardMatchImg from "../../assets/cardMatchImg.png";
 import chessGameImg from "../../assets/chessGameImg.png";
@@ -293,4 +293,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
